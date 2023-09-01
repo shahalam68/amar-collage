@@ -1,13 +1,15 @@
 import React from 'react';
 import './Home.css'
-import { Link } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import Features from '../Features/Features';
 import Course from '../Course/Course';
 
 const Home = () => {
+    const courses = useLoaderData([]);
+    console.log(courses);
     return (
         <div className=''>
-            <div className='home-container '>
+            <div className='home-container  '>
                 <div className='flex justify-between gap-x-10'>
                     <div className='header-text flex-1 mt-40 ml-20 pl-2'>
                         <h1 className='text-7xl font-bold text-white '>Online learning</h1>
@@ -23,9 +25,16 @@ const Home = () => {
                     <Features></Features>
                 </div>
             </div>
-            <div className='flex justify-center'>
-                <h1 className='mt-48 text-7xl'>Our featured courses</h1>
-                <Course></Course>
+            <div className='flex justify-center mt-40'>
+                <h1 className=' text-5xl font-semibold text-[#4255a4]'>Our featured courses</h1>
+            </div>
+            <div className='grid grid-cols-4 gap-10 place-content-center px-24 mt-24 px-24'>
+                {
+                    courses.slice(0, 4).map(course => <Course
+                        key={course.id}
+                        course={course}
+                    ></Course>)
+                }
             </div>
         </div>
     );
