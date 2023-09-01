@@ -11,6 +11,7 @@ import About from './components/About/About';
 import ContactUs from './components/ContactUS/ContactUs';
 import HeaderTest from './components/HeaderTest/HeaderTest';
 import Courses from './components/Courses/Courses';
+import NotFound from './components/NotFound/NotFound';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -35,7 +36,12 @@ const router = createBrowserRouter([
       },
       {
         path:'/courses',
-        element:<Courses></Courses>
+        element:<Courses></Courses>,
+        loader:() => fetch('/course.json'),
+      },
+      {
+        path:'*',
+        element:<NotFound></NotFound>
       }
     ]
   },

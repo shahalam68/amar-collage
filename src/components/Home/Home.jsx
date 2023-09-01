@@ -9,7 +9,7 @@ const Home = () => {
     console.log(courses);
     return (
         <div className=''>
-            <div className='home-container  '>
+            <div className='home-container'>
                 <div className='flex justify-between gap-x-10'>
                     <div className='header-text flex-1 mt-40 ml-20 pl-2'>
                         <h1 className='text-7xl font-bold text-white '>Online learning</h1>

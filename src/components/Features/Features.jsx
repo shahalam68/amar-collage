@@ -17,7 +17,7 @@ const Features = () => {
                     <img className='w-auto h-28' src="https://preview.colorlib.com/theme/courses/assets/img/icon/icon2.svg" alt="" />
                 </div>
                 <div className='pt-2'>
-                    <h2 className='text-[#4255a4] text-xl font-bold'>60+ UX courses</h2>
+                    <h2 className='text-[#4255a4] text-xl font-bold'>Expert instructors</h2>
                     <h2 className="text-[#4255a4] text-l">The automated process all your website tasks.</h2>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const Features = () => {
                     <img className='w-auto h-28' src="https://preview.colorlib.com/theme/courses/assets/img/icon/icon3.svg" alt="" />
                 </div>
                 <div className='pt-2'>
-                    <h2 className='text-[#4255a4] text-xl font-bold'>60+ UX courses</h2>
+                    <h2 className='text-[#4255a4] text-xl font-bold'>Life time access</h2>
                     <h2 className="text-[#4255a4] text-l">The automated process all your website tasks.</h2>
                 </div>
             </div>

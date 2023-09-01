@@ -1,9 +1,12 @@
 import React from 'react';
+import Features from '../Features/Features';
 
 const About = () => {
     return (
         <div>
-            <h2>About</h2>
+            <div className='mt-10'>
+                <Features></Features>
+            </div>
         </div>
     );
 };
