@@ -21,7 +21,7 @@ const Home = () => {
                         <img className='w-auto h-4/5' src="/public/home.png" alt="" />
                     </div>
                 </div>
-                <div className='features-div'>
+                <div >
                     <Features></Features>
                 </div>
             </div>
